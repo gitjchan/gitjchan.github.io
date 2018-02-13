@@ -715,7 +715,7 @@ h3 {
   align-items: center;
   -ms-flex-align: center; }
   .aboutme-grouping .myFace {
-    background: url(../img/headshot.jpg);
+    background: url(asset/img/headshot.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
