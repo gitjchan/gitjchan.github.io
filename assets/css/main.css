@@ -461,6 +461,28 @@ th {
 .icon-codepen:before {
   content: "\f1cb"; }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("/assets/css/fonts/icomooninsta.eot?i0v9fq");
+  src: url("/assets/css/fonts/icomooninsta.eot?i0v9fq#iefix") format("embedded-opentype"), url("/assets/css/fonts/icomooninsta.ttf?i0v9fq") format("truetype"), url("/assets/css/fonts/icomooninsta.woff?i0v9fq") format("woff"), url("/assets/css/fonts/icomooninsta.svg?i0v9fq#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-instagram:before {
+  content: "\e900"; }
+
 body {
   background-color: white;
   font-size: 14px;
@@ -864,16 +886,17 @@ h3 {
     display: block;
     position: relative;
     width: 50%;
-    height: 30em;
+    height: 20em;
     float: left;
     margin: 0 10px;
-    background: url(/assets/img/tempThumb.jpg);
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center center;
     -webkit-perspective: 300;
     -moz-perspective: 300;
     perspective: 300; }
+    .thumb-container .thumb-unit:nth-child(1) {
+      background-image: url(/assets/img/sugarFoot.jpg); }
     @media screen and (max-width: 770px) {
       .thumb-container .thumb-unit {
         margin: 0 2px;
@@ -958,13 +981,20 @@ h3 {
     font-size: 16pt;
     text-transform: uppercase;
     line-height: 1.2; }
-  .thumb-descriptions .tempImg {
+  .thumb-descriptions .tempImg, .thumb-descriptions .proj-1 {
     height: 600px;
     width: 600px;
     text-align: center;
     background: #fff;
     max-width: 100%;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 24pt; }
+  .thumb-descriptions .proj-1 {
+    background-image: url(/assets/img/sugarFoot.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
   .thumb-descriptions p {
     color: #fff; }
 
@@ -989,7 +1019,8 @@ h3 {
   display: -ms-flexbox;
   display: flex; }
   .socialMediaBar .icon-github, .socialMediaBar .icon-linkedin-square,
-  .socialMediaBar .icon-facebook-official, .socialMediaBar .icon-codepen {
+  .socialMediaBar .icon-facebook-official, .socialMediaBar .icon-codepen,
+  .socialMediaBar .icon-instagram {
     font-size: 30pt;
     color: #fff;
     background: #CA8A37;
@@ -1000,7 +1031,8 @@ h3 {
     -moz-transition: all 0.15s ease-out 0s;
     transition: all 0.15s ease-out 0s; }
     .socialMediaBar .icon-github:hover, .socialMediaBar .icon-linkedin-square:hover,
-    .socialMediaBar .icon-facebook-official:hover, .socialMediaBar .icon-codepen:hover {
+    .socialMediaBar .icon-facebook-official:hover, .socialMediaBar .icon-codepen:hover,
+    .socialMediaBar .icon-instagram:hover {
       -webkit-transform: scale(1.2);
       -moz-transform: scale(1.2);
       -ms-transform: scale(1.2);
