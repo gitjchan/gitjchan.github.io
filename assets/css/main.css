@@ -715,7 +715,7 @@ h3 {
   align-items: center;
   -ms-flex-align: center; }
   .aboutme-grouping .myFace {
-    background: url(/assets/img/headshot.jpg);
+    background: url(../img/headshot.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -740,7 +740,7 @@ h3 {
     width: 150px;
     color: #fff; }
     .aboutme-grouping [class^="myFace-"].myFace-2 {
-      background: url(/assets/img/toughMudder.jpg);
+      background: url(../img/toughMudder.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -752,7 +752,7 @@ h3 {
       order: 3;
       -ms-flex-order: 3; }
     .aboutme-grouping [class^="myFace-"].myFace-3 {
-      background: url(/assets/img/dancing.jpg);
+      background: url(../img/dancing.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -896,9 +896,9 @@ h3 {
     -moz-perspective: 300;
     perspective: 300; }
     .thumb-container .thumb-unit:nth-child(1) {
-      background-image: url(/assets/img/ilovedancing.jpg); }
+      background-image: url(../img/ilovedancing.jpg); }
     .thumb-container .thumb-unit:nth-child(2) {
-      background-image: url(/assets/img/jsProjects.jpg); }
+      background-image: url(../img/jsProjects.jpg); }
     @media screen and (max-width: 770px) {
       .thumb-container .thumb-unit {
         margin: 0 2px;
@@ -959,7 +959,7 @@ h3 {
   position: relative;
   display: none; }
   .thumb-descriptions .arrowNav {
-    background: url(/assets/img/navArrow.png);
+    background: url(../img/navArrow.png);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center center;
@@ -994,9 +994,9 @@ h3 {
     cursor: pointer;
     font-size: 24pt; }
   .thumb-descriptions .proj-1 {
-    background-image: url(/assets/img/ilovedancing.jpg); }
+    background-image: url(../img/ilovedancing.jpg); }
   .thumb-descriptions .proj-2 {
-    background-image: url(/assets/img/jsProjects.jpg); }
+    background-image: url(../img/jsProjects.jpg); }
   .thumb-descriptions p {
     color: #fff; }
 
