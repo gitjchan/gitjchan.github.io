@@ -432,8 +432,8 @@ th {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../css/fonts/icomoon.eot?drvffz");
-  src: url("../css/fonts/icomoon.eot?drvffz#iefix") format("embedded-opentype"), url("../css/fonts/icomoon.ttf?drvffz") format("truetype"), url("../css/fonts/icomoon.woff?drvffz") format("woff"), url("....../css/fonts/icomoon.svg?drvffz#icomoon") format("svg");
+  src: url("/assets/css/fonts/icomoon.eot?drvffz");
+  src: url("/assets/css/fonts/icomoon.eot?drvffz#iefix") format("embedded-opentype"), url("/assets/css/fonts/icomoon.ttf?drvffz") format("truetype"), url("/assets/css/fonts/icomoon.woff?drvffz") format("woff"), url("/assets/css/fonts/icomoon.svg?drvffz#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -463,8 +463,8 @@ th {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../css/fonts/icomooninsta.eot?i0v9fq");
-  src: url("../css/fonts/icomooninsta.eot?i0v9fq#iefix") format("embedded-opentype"), url("../css/fonts/icomooninsta.ttf?i0v9fq") format("truetype"), url("../css/fonts/icomooninsta.woff?i0v9fq") format("woff"), url("../css/fonts/icomooninsta.svg?i0v9fq#icomoon") format("svg");
+  src: url("/assets/css/fonts/icomooninsta.eot?i0v9fq");
+  src: url("/assets/css/fonts/icomooninsta.eot?i0v9fq#iefix") format("embedded-opentype"), url("/assets/css/fonts/icomooninsta.ttf?i0v9fq") format("truetype"), url("/assets/css/fonts/icomooninsta.woff?i0v9fq") format("woff"), url("/assets/css/fonts/icomooninsta.svg?i0v9fq#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -715,7 +715,7 @@ h3 {
   align-items: center;
   -ms-flex-align: center; }
   .aboutme-grouping .myFace {
-    background: url(../img/headshot.jpg);
+    background: url(/assets/img/headshot.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -740,7 +740,7 @@ h3 {
     width: 150px;
     color: #fff; }
     .aboutme-grouping [class^="myFace-"].myFace-2 {
-      background: url(../img/toughMudder.jpg);
+      background: url(/assets/img/toughMudder.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -752,7 +752,7 @@ h3 {
       order: 3;
       -ms-flex-order: 3; }
     .aboutme-grouping [class^="myFace-"].myFace-3 {
-      background: url(../img/dancing.jpg);
+      background: url(/assets/img/dancing.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -896,7 +896,9 @@ h3 {
     -moz-perspective: 300;
     perspective: 300; }
     .thumb-container .thumb-unit:nth-child(1) {
-      background-image: url(../img/sugarFoot.jpg); }
+      background-image: url(/assets/img/ilovedancing.jpg); }
+    .thumb-container .thumb-unit:nth-child(2) {
+      background-image: url(/assets/img/jsProjects.jpg); }
     @media screen and (max-width: 770px) {
       .thumb-container .thumb-unit {
         margin: 0 2px;
@@ -907,7 +909,7 @@ h3 {
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(202, 138, 55, 0.9);
       -webkit-transition: all 0.15s ease-out 0s;
       -moz-transition: all 0.15s ease-out 0s;
       transition: all 0.15s ease-out 0s;
@@ -938,7 +940,7 @@ h3 {
       -ms-flex-align: center;
       cursor: pointer; }
       .thumb-container .thumb-unit .thumb-overlay strong {
-        color: #CA8A37;
+        color: #fff;
         font-weight: 300;
         font-size: 30pt;
         text-transform: uppercase;
@@ -957,7 +959,7 @@ h3 {
   position: relative;
   display: none; }
   .thumb-descriptions .arrowNav {
-    background: url(../img/navArrow.png);
+    background: url(/assets/img/navArrow.png);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center center;
@@ -981,20 +983,20 @@ h3 {
     font-size: 16pt;
     text-transform: uppercase;
     line-height: 1.2; }
-  .thumb-descriptions .tempImg, .thumb-descriptions .proj-1 {
+  .thumb-descriptions .proj-2, .thumb-descriptions .proj-1 {
     height: 600px;
     width: 600px;
-    text-align: center;
-    background: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     max-width: 100%;
     margin-bottom: 10px;
     cursor: pointer;
     font-size: 24pt; }
   .thumb-descriptions .proj-1 {
-    background-image: url(../img/sugarFoot.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; }
+    background-image: url(/assets/img/ilovedancing.jpg); }
+  .thumb-descriptions .proj-2 {
+    background-image: url(/assets/img/jsProjects.jpg); }
   .thumb-descriptions p {
     color: #fff; }
 
