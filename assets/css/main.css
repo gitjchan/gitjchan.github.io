@@ -508,18 +508,30 @@ body {
   -webkit-tap-highlight-color: #FFF498; }
 
 a {
-  color: #fff;
+  color: #CA8A37;
   text-decoration: none;
-  outline: 0; }
+  outline: 0;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s; }
   a:hover {
-    color: #CA8A37; }
+    color: #dfb988;
+    transform: scale(1.1); }
   a:focus {
     color: #dfb988; }
 
 .gigantic, .huge, .large, .bigger, .big,
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   color: #222;
   font-weight: bold; }
+
+h3 {
+  color: #CA8A37;
+  font-size: 30pt;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0 20px 0; }
 
 .gigantic {
   font-size: 110px;
@@ -534,10 +546,6 @@ h1, h2, h3, h4, h5, h6 {
 .large, h2 {
   font-size: 42px;
   line-height: 1.14; }
-
-.bigger, h3 {
-  font-size: 26px;
-  line-height: 1.38; }
 
 .big, h4 {
   font-size: 22px;
@@ -616,10 +624,10 @@ header {
   background-attachment: scroll, fixed; }
   header nav {
     float: right;
-    padding: 30px 30px 0 0; }
+    padding: 30px 60px 0 0; }
     header nav a {
       display: inline-block;
-      margin-left: 20px;
+      margin-left: 40px;
       font-weight: 600;
       font-size: 16pt;
       text-transform: uppercase; }
@@ -630,8 +638,9 @@ header {
     font-weight: 700;
     color: #fff;
     clear: both;
-    padding-top: 30vh;
-    text-transform: uppercase; }
+    padding-top: 15vh;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
     header h1 span {
       border: solid white 10px;
       padding: 10px 40px 10px 40px;
@@ -678,13 +687,7 @@ footer .container {
       text-transform: uppercase;
       font-weight: 600;
       font-size: 10pt;
-      color: #fff; }
-
-h3 {
-  color: #CA8A37;
-  text-align: center;
-  margin: 0 auto;
-  padding: 40px 0 20px 0; }
+      color: #CA8A37; }
 
 .aboutme-grouping {
   max-width: 780px;
@@ -840,11 +843,13 @@ h3 {
 @media screen and (max-width: 630px) {
   .skills-grouping .skill-container {
     width: 300px; } }
-.alt-section {
+.section {
   background: rgba(0, 0, 0, 0.6); }
 
 .section-work {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  width: 50%;
+  margin: 0 auto; }
 
 .work-belt {
   width: 200%;
@@ -894,9 +899,17 @@ h3 {
     background-position: center center;
     -webkit-perspective: 300;
     -moz-perspective: 300;
-    perspective: 300; }
+    perspective: 300;
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s; }
     .thumb-container .thumb-unit:nth-child(1) {
-      background-image: url(../img/sugarFoot.jpg); }
+      background-image: url(../img/ilovedancing.jpg); }
+    .thumb-container .thumb-unit:nth-child(2) {
+      background-image: url(../img/jsProjects.jpg); }
+    .thumb-container .thumb-unit:hover {
+      width: 100%;
+      height: 21em; }
     @media screen and (max-width: 770px) {
       .thumb-container .thumb-unit {
         margin: 0 2px;
@@ -907,7 +920,7 @@ h3 {
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.9);
       -webkit-transition: all 0.15s ease-out 0s;
       -moz-transition: all 0.15s ease-out 0s;
       transition: all 0.15s ease-out 0s;
@@ -981,20 +994,20 @@ h3 {
     font-size: 16pt;
     text-transform: uppercase;
     line-height: 1.2; }
-  .thumb-descriptions .tempImg, .thumb-descriptions .proj-1 {
+  .thumb-descriptions .proj-2, .thumb-descriptions .proj-1 {
     height: 600px;
     width: 600px;
-    text-align: center;
-    background: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     max-width: 100%;
     margin-bottom: 10px;
     cursor: pointer;
     font-size: 24pt; }
   .thumb-descriptions .proj-1 {
-    background-image: url(../img/sugarFoot.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; }
+    background-image: url(../img/ilovedancing.jpg); }
+  .thumb-descriptions .proj-2 {
+    background-image: url(../img/jsProjects.jpg); }
   .thumb-descriptions p {
     color: #fff; }
 
@@ -1051,3 +1064,44 @@ h3 {
   font-weight: 200;
   color: #CA8A37;
   margin: 0 auto; }
+
+.section-testimonials {
+  background: #fff; }
+
+.outerContainer {
+  padding-bottom: 90px; }
+
+.panels {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 60%;
+  margin: 0 auto; }
+  .panels .panel {
+    text-align: center;
+    flex: 1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .panels .panel p {
+      font-size: 25px;
+      font-weight: 600;
+      color: #666; }
+      .panels .panel p span {
+        font-style: italic;
+        font-size: 22px;
+        color: #CA8A37; }
+      @media (max-width: 560px) {
+        .panels .panel p {
+          font-size: 18px;
+          font-weight: 400; } }
