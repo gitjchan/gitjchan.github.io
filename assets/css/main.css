@@ -899,17 +899,14 @@ footer .container {
     background-position: center center;
     -webkit-perspective: 300;
     -moz-perspective: 300;
-
     perspective: 300;
     -webkit-transition: all 0.15s ease-out 0s;
     -moz-transition: all 0.15s ease-out 0s;
     transition: all 0.15s ease-out 0s; }
-
     .thumb-container .thumb-unit:nth-child(1) {
       background-image: url(../img/ilovedancing.jpg); }
     .thumb-container .thumb-unit:nth-child(2) {
       background-image: url(../img/jsProjects.jpg); }
-
     .thumb-container .thumb-unit:hover {
       width: 100%;
       height: 21em; }
@@ -954,7 +951,7 @@ footer .container {
       -ms-flex-align: center;
       cursor: pointer; }
       .thumb-container .thumb-unit .thumb-overlay strong {
-        color: #fff;
+        color: #CA8A37;
         font-weight: 300;
         font-size: 30pt;
         text-transform: uppercase;
@@ -1100,7 +1097,6 @@ footer .container {
       font-size: 25px;
       font-weight: 600;
       color: #666; }
-
       .panels .panel p span {
         font-style: italic;
         font-size: 22px;
